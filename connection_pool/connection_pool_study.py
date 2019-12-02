@@ -16,7 +16,7 @@ class DatabaseConnectionPool:
 
 
     @classmethod
-    def __get__instance(cls):
+    def get__instance(cls):
         if cls.INSTANCE is None:
             cls.INSTANCE = DatabaseConnectionPool()
         return cls.INSTANCE;
